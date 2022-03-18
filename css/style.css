@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background: rgba(5, 65, 45, 0.884);
+	max-width: 1080px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+body {
+	background: url(../img/game.jpg) 0 0 / cover;
+	font-family: "Caveat", cursive;
+}
+
+.title {
+	text-align: center;
+	margin: 20px auto 0 auto;
+	font-size: 56px;
+	color: rgb(37, 2, 2);
+	border: 2px solid #000;
+	width: 400px;
+	background: rgb(152, 146, 146);
+	background: radial-gradient(circle, rgba(152, 146, 146, 0.4738270308123249) 0%, rgba(77, 29, 63, 1) 100%);
+	border-radius: 7px;
+}
+
+.game {
+	max-width: 760px;
+	max-height: 870px;
+	box-shadow: 0px 0px 5px 3px #000;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+.game div {
+	background-color: antiquewhite;
+}
+
+.block1 {
+	width: 45px;
+	height: 50px;
+}
+
+.block2 {
+	width: 200px;
+	height: 30px;
+	visibility: hidden;
+}
+
+.block1:hover + .block2,
+.block2:hover {
+	visibility: visible;
+}
+
+.block3 {
+	height: 300px;
+	width: 20px;
+	margin: 0 0 0 180px;
+	visibility: hidden;
+}
+
+.block4 {
+	width: 450px;
+	height: 20px;
+	margin: 0 0 0 180px;
+	visibility: hidden;
+}
+
+.block2:hover + .block3,
+.block3:hover {
+	visibility: visible;
+}
+
+.block3:hover + .block4,
+.block4:hover {
+	visibility: visible;
+}
+
+.block5 {
+	height: 200px;
+	width: 50px;
+	margin: 0 0 0 580px;
+	visibility: hidden;
+}
+
+.block6 {
+	width: 250px;
+	height: 10px;
+	margin: 0 0 0 380px;
+	visibility: hidden;
+}
+
+.block4:hover + .block5,
+.block5:hover {
+	visibility: visible;
+}
+
+.block5:hover + .block6,
+.block6:hover {
+	visibility: visible;
+}
+
+.block6:hover + .block7,
+.block7:hover {
+	visibility: visible;
+}
+
+.block7 {
+	height: 60px;
+	width: 70px;
+	margin: 0 0 0 380px;
+	visibility: hidden;
+	background-color: red;
+}
+
+.block8 {
+	width: 200px;
+	height: 170px;
+	background-image: url(../img/zxc-zxccat.gif);
+	background-size: 200px auto;
+	margin: 0 0 0 320px;
+	visibility: hidden;
+}
+
+.block7:hover + .block8,
+.block8:hover {
+	visibility: visible;
+}
